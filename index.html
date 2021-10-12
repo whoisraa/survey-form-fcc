@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form - FCC</title>
+</head>
+
+<body>
+  <h1 id="title">Straw Hat Pirates <br> Survey Form</h1>
+  <p id="description">Please fill out this form</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">What is your name?</label>
+    <input type="text" id="name" placeholder="Your name" tabindex="1" required>
+    <br><br>
+    <label for="email" id="email-label">What is your email?</label>
+    <input type="email" id="email" placeholder="Your email" tabindex="2" required>
+    <br><br>
+    <label for="age" id="number-label">How old are you?</label>
+    <input type="number" id="number" placeholder="Your age" min="16" max="99" tabindex="3" required>
+    <br><br>
+    <label for="media" id="media-label">Which one do you prefer?</label>
+    <select name="media" id="dropdown">
+      <option value="manga">Manga</option>
+      <option value="anime">Anime</option>
+    </select>
+    <br><br>
+    <label for="member" id="member-label">Which one is your favorite member?</label><br>
+    <input type="radio" name="member" value="luffy">Luffy <br>
+    <input type="radio" name="member" value="zoro">Zoro <br>
+    <input type="radio" name="member" value="nami">Nami <br>
+    <input type="radio" name="member" value="usopp">Usopp <br>
+    <input type="radio" name="member" value="sanji">Sanji <br>
+    <input type="radio" name="member" value="chopper">Chopper <br>
+    <input type="radio" name="member" value="robin">Robin <br>
+    <input type="radio" name="member" value="franky">Franky <br>
+    <input type="radio" name="member" value="brook">Brook <br>
+    <input type="radio" name="member" value="jinbe">Jinbe
+    <br><br>
+    <label for="movie" id="movie-label">What are your favorite movies?</label><br>
+    <input type="checkbox" value="stampede">Stampede <br>
+    <input type="checkbox" value="gold">Gold <br>
+    <input type="checkbox" value="z">Z <br>
+    <input type="checkbox" value="strong-world">Strong World <br>
+    <input type="checkbox" value="baron-omatsuri">Baron Omatsuri
+    <br><br>
+    <label for="impression" id="impression-label">What is your impression?</label>
+    <textarea name="impression" id="impression" cols="30" rows="10"></textarea>
+    <br><br>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
